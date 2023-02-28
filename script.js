@@ -967,10 +967,8 @@ $("body").on("keypress", function (e) {
     if ($("[data-enter]").data("enter")) {
       $('[data-form="next-btn"]')[0].click();
       e.preventDefault();
-      e.stopPropagation();
     } else {
       e.preventDefault();
-      e.stopPropagation();
     }
   }
 });
@@ -981,7 +979,6 @@ $("body").keydown(function (e) {
       $('[data-form="submit-btn"]').click();
     } else {
       event.preventDefault();
-      event.stopPropagation();
     }
   }
 });
@@ -1126,7 +1123,6 @@ $('[data-form="submit-btn"]').on("click", function (e) {
   console.log("clicked submit");
 
   e.preventDefault();
-  e.stopPropagation();
   //console.log('form is being submitted')
 
   if ($('[data-form="multistep"]').data("logic-extra")) {
